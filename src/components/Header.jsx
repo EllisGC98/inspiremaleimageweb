@@ -35,7 +35,7 @@ const Header = () => {
             <nav className='navbar'>
               <ul>
                 <li>
-                  <a href='#about'>About</a>
+                  <Link to='/' href='#about'>About</Link>
                 </li>
                 <li>
                   <a href='#team'>Team</a>
