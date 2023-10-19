@@ -5,7 +5,7 @@ import '../App.css';
 const Mission = () => {
   return (
     <>
-    <section className='mission-page' id='mission'>
+    <section className='mission-page' id='about'>
       <div className=''>
         <div className='mission-content'>
           <div className='left-content'>
@@ -14,7 +14,7 @@ const Mission = () => {
             <p>
               At Inspire Male Image, we are passionate about giving our
               customers the best haircuts, experience, and our full attention to
-              detail. That's why we've created a space that's designed to make
+              detail. <br></br>That's why we've created a space that's designed to make
               you feel comfortable and relaxed.
             </p>
           </div>

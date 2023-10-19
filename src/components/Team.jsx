@@ -1,8 +1,10 @@
 import React from 'react'
 import TeamCard from './TeamCard'
+import '../App.css';
 import Ryan from '../assets/Ryan.JPG'
 import Reece from '../assets/ReeceTeam.JPG'
 import Sam from '../assets/SamTeam.JPG'
+import Barbers from '../assets/Barbers.jpg'
 
 
 const teamMembers = [
@@ -34,6 +36,10 @@ const teamMembers = [
 
 const Team = () => {
   return (
+  <div>
+       <img src={Barbers} alt="Landscape" style={{ width: '100%', height: 'auto', paddingTop: '50px'}} />
+       <section id='team'>
+       <h3 className="team-text">Meet The Team</h3>
     <div className="team-container">
       {teamMembers.map((member) => (
         <TeamCard
@@ -46,6 +52,8 @@ const Team = () => {
          />
       ))}
     </div>
+    </section>
+  </div>
   );
  }
 

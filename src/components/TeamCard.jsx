@@ -1,4 +1,6 @@
 import React from 'react'
+import '../App.css';
+
 
 const TeamCard = ({ name, position, bio, imageSrc, bookNow}) => {
   return (
@@ -6,9 +8,9 @@ const TeamCard = ({ name, position, bio, imageSrc, bookNow}) => {
     <div className='team-member-card'>
         <img src={imageSrc} alt={name} 
         className='team-member-image' />
-        <h4>{name}</h4>
-        <p>{position}</p>
-        <p>{bio}</p>
+        <h4 className='team-name'>{name}</h4>
+        <p className='team-position'>{position}</p>
+        <p className='team-bio'>{bio}</p>
         <a href={bookNow} 
         className='book-now-button'>
             Book now

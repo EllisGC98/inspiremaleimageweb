@@ -35,7 +35,7 @@ const Header = () => {
             <nav className='navbar'>
               <ul>
                 <li>
-                  <Link to='/' href='#about'>About</Link>
+                  <a href='#about'>About</a>
                 </li>
                 <li>
                   <a href='#team'>Team</a>
@@ -45,7 +45,7 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <button className='carousel-button' onClick={() => window.location.href 
+            <button className='book-now-button' onClick={() => window.location.href 
               = 'https://booksy.com/en-gb/115877_inspire-male-image_barber_1547473_bangor'}>
             Book Now
           </button>
