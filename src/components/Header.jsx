@@ -4,14 +4,26 @@ import InspireLogo from '../assets/Inspire.png';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Reece from '../assets/Landscape1.jpg';
-import Barbers from '../assets/Barbers.jpg';
 import Action from '../assets/Action.JPG';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = ({ open, handleOpen }) => {
 
-  console.log("Header component - open:", open);
-  console.log("Header component - handleOpen:", handleOpen);
+  const navigate = useNavigate();
+
+  const handleNavigate = (route, hash) => {
+    // Close the menu
+    handleOpen();
+
+    // Navigate to the route
+    navigate(route);
+
+    // Scroll to the section
+    const element = document.getElementById(hash);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   
   const pageUp = () => {
@@ -35,9 +47,6 @@ const Header = ({ open, handleOpen }) => {
             <img src={Action} alt="barber" className="carousel-image" />
           </div>
           <div>
-            <img src={Barbers} alt="barber" className="carousel-image" />
-          </div>
-          <div>
             <img src={Reece} alt="barber" className="carousel-image" />
           </div>
         </Carousel>
@@ -48,12 +57,12 @@ const Header = ({ open, handleOpen }) => {
           <nav>
             <div className={`nav ${open ? 'open' : 'close'}`}>
               <div className="link-container">
-                <Link to='/'onClick={handleOpen} href="#about">
+                <Link to='/'onClick={() => handleNavigate('/', 'about')}>
                   About
                 </Link>
-                <a onClick={handleOpen} href="#team">
+                <Link to='/' onClick={() => handleNavigate('/', 'team')}>
                   Team
-                </a>
+                </Link>
                 <Link onClick={handleOpen} to="/contact">
                   Contact
                 </Link>

@@ -22,7 +22,7 @@ const Contact = () => {
                 <p>Wednesday 10:00 - 18:00</p>
                 <p>Thursday 10:00 - 19:00</p>
                 <p>Friday 10:00 - 19:00</p>
-                <p>Saturday 08:00 - 16:00</p>
+                <p>Saturday 08:00 - 15:00</p>
             </div>
             <h3 className='location-text'>
                 Location

@@ -71,6 +71,7 @@ body {
 
 .link-container a:hover {
   color: #DCDCDC;
+  text-decoration: none;
 }
 
 .nav-btn {
@@ -293,13 +294,9 @@ a:hover {
   transform: translateY(0);
 }
 
-@media screen and (max-width: 400px) {
-  .logo {
-    padding-top: 500px;
-    max-width: 90px;
-  }
+@media screen and (max-width: 450px) {
   .book-now-button {
-    margin-top: 30px;
+    margin-bottom: -100px;
   }
 }
 
@@ -370,8 +367,8 @@ a:hover {
     width: 100%;
   }
   .logo {
-    padding-top: 450px;
-    max-width: 110px;
+    padding-top: 400px;
+    max-width: 100px;
   }
 
   .book-now-button {
@@ -431,7 +428,6 @@ a:hover {
 @media screen and (max-width: 768px) {
   .logo {
     max-width: 120px;
-    height: auto;
     padding-top: 400px;
   }
   .header-container {
@@ -477,8 +473,20 @@ a:hover {
   .team-bio {
     font-size: 1rem; 
   }
+  .contact-text {
+    font-size: 2rem;
+  }
 
-  
+  .contact-info,
+  .business-hours,
+  .address-text {
+    font-size: 1.2rem;
+  }
+
+  .hours-text,
+  .location-text {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -495,9 +503,13 @@ a:hover {
     padding-top: 20px; 
   }
   .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+  }
+  .logo {
+    padding-top: 550px;
+  }
+  .book-now-button {
+    margin-bottom: 50px;
   }
 }
 
