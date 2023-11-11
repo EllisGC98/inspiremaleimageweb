@@ -33,7 +33,9 @@ const Contact = () => {
             </div>
         </div>
         <div className='map'>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.8360470762736!2d-5.668205100000028!3d54.6597115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48619e18e7a2178d%3A0xfd4aa8d6e51c4920!2s11%20Market%20St%2C%20Bangor%20BT20%204SP!5e0!3m2!1sen!2suk!4v1695132117813!5m2!1sen!2suk" 
+        <iframe 
+                title="Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.8360470762736!2d-5.668205100000028!3d54.6597115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48619e18e7a2178d%3A0xfd4aa8d6e51c4920!2s11%20Market%20St%2C%20Bangor%20BT20%204SP!5e0!3m2!1sen!2suk!4v1695132117813!5m2!1sen!2suk" 
                 width="100%" 
                 height="450" 
                 style={{ border: "0" }}
