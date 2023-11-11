@@ -37,7 +37,7 @@ const teamMembers = [
 const Team = () => {
   return (
   <div>
-       <img src={Barbers} alt="Landscape" style={{ width: '100%', height: 'auto', paddingTop: '50px'}} />
+       <img src={Barbers} alt="Landscape" style={{ width: '100%', height: 'auto', paddingTop: '50px' }} />
        <section id='team'>
        <h3 className="team-text">Meet The Team</h3>
     <div className="team-container">
@@ -48,7 +48,7 @@ const Team = () => {
           position={member.position}
           bio={member.bio}
           imageSrc={member.imageSrc}
-          bookNowLink={member.bookNowLink}
+          bookNow={member.bookNow}
          />
       ))}
     </div>

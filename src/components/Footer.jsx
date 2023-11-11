@@ -21,11 +21,11 @@ const Footer = () => {
               <FontAwesomeIcon icon={faInstagram} size='2x' />
             </a>
           </div>
-          <h3>
+          <h3 className='footer-address'>
             11 Market Street <br />
             Bangor, BT20 4SP
           </h3>
-          <h3>© Inspire Male Image {new Date().getFullYear()}. All rights reserved</h3>
+          <h3 className='footer-rights'>© Inspire Male Image {new Date().getFullYear()}. All rights reserved</h3>
         </div>
       </div>
     </footer>

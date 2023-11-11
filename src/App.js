@@ -1,20 +1,30 @@
 import './App.css';
-import FadeInOnScroll from './components/FadeInOnScroll';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
 import Header from './components/Header';
-import Mission from './components/Mission';
 import Footer from './components/Footer';
-import Team from './components/Team';
+import { useState } from 'react';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+    document.body.classList.toggle("overflow-hidden");
+  }
+
   return (
     <div className="App">
-     <Header />
-     <FadeInOnScroll>
-     <Mission />
-     <Team />
-     <Footer />
-     </FadeInOnScroll>
-  
+
+      <Header open={open} handleOpen={handleOpen}/>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+      <Footer />
+
     </div>
   );
 }

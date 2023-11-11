@@ -1,18 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './App.css';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import Contact from './pages/Contact';
 
+const rootElement = document.getElementById('root');
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(rootElement).render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="contact" element={<Contact />} />
-  </Routes>
+    <App />
   </BrowserRouter>
 );
-
